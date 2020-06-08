@@ -11,27 +11,28 @@
 
   <body>
     <header class="header-top">
-      <div class="top-line">
+      <div class="top-line-container">
         <a href="#"><img src="./images/WebStudio.jpg" class="web-studio-link" alt="Web Studio" /></a>
 
-        <nav class="top-line-nav">
-          <ul>
-            <li><a href="./index.html" class="link-current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="#" class="link">Контакты</a></li>
+        <nav class="site-nav-container">
+          <ul class="site-nav">
+            <li class="site-nav-item"><a href="./index.html" class="link-current">Студия</a></li>
+            <li class="site-nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="site-nav-item"><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
 
-        <address class="top-line-address">
-          <a href="#mailto:info@devstudio.com" class="link">&#9993; info@devstudio.com</a>
-          <br />
-          <a href="#tel:+380961111111" class="link">&#x1F4F1; +38-096-111-11-11</a>
+        <address class="address-container">
+          <ul class="top-line-address">
+            <li class="address-item"><a href="#mailto:info@devstudio.com" class="link">&#9993; info@devstudio.com</a></li>
+            <li class="address-item"><a href="#tel:+380961111111" class="link">&#x1F4F1; +38-096-111-11-11</a></li>
+          </ul>
         </address>
       </div>
     </header>
 
     <main>
-      <section class="order">
+      <section class="order-container">
         <h1 class="main-title" lang="ru">
           Эффективные решения <br />
           для вашего бизнеса
@@ -39,9 +40,9 @@
         <a class="order-service" href="#">Заказать услугу</a>
       </section>
 
-      <section class="features">
-        <ul>
-          <li class="feachers-list">
+      <section class="features-container">
+        <ul class="features-list">
+          <li class="feachers-items">
             <img src="./images/antenna1.jpg" width="70" height="70" alt="" />
             <h2 class="features-title">Внимание к деталям</h2>
             <p class="features-text">
@@ -49,7 +50,7 @@
             </p>
           </li>
 
-          <li class="feachers-list">
+          <li class="feachers-items">
             <img src="./images/clock1.jpg" width="70" height="70" alt="" />
             <h2 class="features-title">Пунктуальность</h2>
             <p class="features-text">
@@ -57,7 +58,7 @@
             </p>
           </li>
 
-          <li class="feachers-list">
+          <li class="feachers-items">
             <img src="./images/diagram1.jpg" width="70" height="70" alt="" />
             <h2 class="features-title">Планирование</h2>
             <p class="features-text">
@@ -65,7 +66,7 @@
             </p>
           </li>
 
-          <li  class="feachers-list">
+          <li  class="feachers-itemts">
             <img src="./images/astronaut1.jpg" width="70" height="70" alt="" />
             <h2 class="features-title">Современные технологии</h2>
             <p class="features-text">
@@ -75,9 +76,9 @@
         </ul>
       </section>
 
-      <section class="doings">
+      <section class="doings-container">
         <h3 class="page-title">Чем мы занимаемся</h3>
-        <ul>
+        <ul class="doings-list">
           <li class="doings-card">
             <img src="./images/desctope.jpg" alt="" width="370" height="294" />
             <h4 class="doings-text">Десктопные приложения</h4>
@@ -95,12 +96,12 @@
         </ul>
       </section>
 
-      <section class="team">
+      <section class="team-container">
         <h3 class="page-title">Наша команда</h3>
-        <ul>
+        <ul class="team-list">
           <li class="emploee-card">
-            <img src="./images/John.jpg" alt="John_Smith" width="270" height="260" />
-            <h4 class="emploee-name">John Smith</h4>
+            <img src="./images/John.jpg" alt="John_Smith" class="emploee-image" width="270" height="260" />
+            <h4 class="emploee-name">Николай Кучеренко</h4>
             <p class="emploee-position">Product Designer</p>
             <ul class="emploee-social">
               <li>
@@ -119,8 +120,8 @@
           </li>
 
           <li class="emploee-card">
-            <img src="./images/Marta.jpg" alt="Marta_Stewart" width="270" height="260" />
-            <h4 class="emploee-name">Marta Stewart</h4>
+            <img src="./images/Marta.jpg" alt="Marta_Stewart" class="emploee-image" width="270" height="260" />
+            <h4 class="emploee-name">Ольга Иванова</h4>
             <p class="emploee-position">Frontend Developer</p>
             <ul class="emploee-social">
               <li>
@@ -139,8 +140,8 @@
           </li>
 
           <li class="emploee-card">
-            <img src="./images/Robert.jpg" alt="Robert_Jakis" width="270" height="260" />
-            <h4 class="emploee-name">Robert Jakis</h4>
+            <img src="./images/Robert.jpg" alt="Robert_Jakis" class="emploee-image" width="270" height="260" />
+            <h4 class="emploee-name">Андрей Шевченко</h4>
             <p class="emploee-position">Marketing</p>
             <ul class="emploee-social">
               <li>
@@ -159,8 +160,8 @@
           </li>
 
           <li class="emploee-card">
-            <img src="./images/Martin.jpg" alt="Martin_Doe" width="270" height="260" />
-            <h4 class="emploee-name">Martin Doe</h4>
+            <img src="./images/Martin.jpg" alt="Martin_Doe" class="emploee-image" width="270" height="260" />
+            <h4 class="emploee-name">Иван Николаев</h4>
             <p class="emploee-position">UI Designer</p>
             <ul class="emploee-social">
               <li>
@@ -180,41 +181,41 @@
         </ul>
       </section>
 
-      <section class="customers">
+      <section class="customers-container">
         <h3 class="page-title">Постоянные клиенты</h3>
 
-        <ul>
-          <li>
+        <ul class="customers-list">
+          <li class="customers-item">
             <a href="">
               <img src="./images/logo1.jpg" alt="" />
             </a>
           </li>
 
-          <li>
+          <li class="customers-item">
             <a href="">
               <img src="./images/logo2.jpg" alt="" />
             </a>
           </li>
 
-          <li>
+          <li class="customers-item">
             <a href="">
               <img src="./images/logo3.jpg" alt="" />
             </a>
           </li>
 
-          <li>
+          <li class="customers-item">
             <a href="">
               <img src="./images/logo4.jpg" alt="" />
             </a>
           </li>
 
-          <li>
+          <li class="customers-item">
             <a href="">
               <img src="./images/logo5.jpg" alt="" />
             </a>
           </li>
 
-          <li>
+          <li class="customers-item">
             <a href="">
               <img src="./images/logo6.jpg" alt="" />
             </a>

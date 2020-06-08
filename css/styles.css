@@ -9,6 +9,11 @@
   --logo-font: Raleway, sans-serif;
 }
 
+body {
+  width: 1600px;
+  height: 2924px;
+}
+
 main {
   font-family: var(--font-main);
 }
@@ -28,17 +33,77 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.top-line-nav .link {
+.top-line-container {
+  width: 1200px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+}
+
+.web-studio-link {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: auto;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .site-nav-item + .site-nav-item {
+  margin-left: 50px;
+}
+
+/* -----ещё можно было сделать так:-----
+.site-nav .site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+-----или так:-----
+.site-nav-item {
+margin-right: 50px;
+}
+.site-nav .site-nav-item:last-child {
+  margin-right: 0px;
+}
+*/
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   text-decoration-line: none;
+
 }
-.top-line-nav .link:hover,
-.top-line-nav .link:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--accent-color);
 }
-.top-line-nav .link-current {
+.site-nav .link-current {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   text-decoration-line: none;
+}
+
+.address-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
+}
+
+.top-line-address {
+  display: flex;
+  margin-left: auto;
+}
+.top-line-address .address-item + .address-item {
+  margin-left: 50px;
 }
 
 .top-line-address .link {
@@ -54,28 +119,47 @@ ul {
 /* main */
 /*section order*/
 
-.order {
-  font-style: normal;
+.order-container {
+  margin-top: 0px;
+  margin-bottom: 94px;
+  padding: 200px 452px;
+  align-items: center;
+
+  background-color: lavender;
+}
+
+.main-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: var(--aditional-text-color);
   text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .order-service {
+  display: flex;
+  margin-top: 0px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
+  position: absolute;
+  align-items: center;
+
   color: var(--aditional-text-color);
   background-color: var(--accent-color);
-  text-decoration-line: none;
+  text-align: center;
+  text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   /* identical to box height, or 187% */
-  box-sizing: content-box;
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  letter-spacing: 0.06em;
 }
 
 .order-service :hover,
@@ -83,17 +167,31 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.main-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-  text-transform: uppercase;
-}
 
 /*section features*/
 
+.features-container {
+  width: 1170px;
+  height: 251px;
+
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.features-list .feachers-items + .feachers-items {
+  margin-left: 30px;
+}
+
 .features-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -104,6 +202,8 @@ ul {
 }
 
 .features-text {
+  margin: 0px;
+
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: normal;
@@ -116,13 +216,34 @@ ul {
 /*What we do*/
 
 .page-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  text-align: center;
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.03em;
+}
+
+.doings-container {
+  margin-top: 0px;
+  margin-bottom: 94px;
+
+  width: 1170px;
+  height: 386px;
+  align-items: center;
+}
+
+.doings-list {
+  margin: 0px;
+  display: flex;
+}
+
+.doings-list .doings-card + .doings-card {
+  margin-left: 30px;
 }
 
 .doings-text {
@@ -137,7 +258,15 @@ ul {
 
 /*Our team*/
 
-.team {
+.team-container {
+  margin-top: 0px;
+  margin-bottom: 94px;
+
+  width: 1170px;
+  height: 422px;
+
+  align-items: center;
+
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
@@ -145,25 +274,65 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.team-list {
+  margin: 0px;
+
+  display: flex;
+}
+
+.team-list .emploee-card + .emploee-card {
+  margin-left: 30px;
+}
+
+.emploee-image {
+  margin: 0px;
+
+  display: flex;
+}
+
 .emploee-name {
+  margin: 0px;
+
   color: var(--title-text-color);
   font-weight: 500;
   text-align: center;
 }
 
 .emploee-position {
+  margin: 0px;
+
   color: var(--primary-text-color);
   font-weight: normal;
   text-align: center;
 }
 
 .emploee-social-link {
+  margin: 0px;
+
   text-decoration-line: none;
   color: var(--accent-color);
 }
 
 /*Our customers*/
 
+.customers-container {
+  margin-top: 0px;
+  margin-bottom: 94px;
+
+  width: 1170px;
+  height: 182px;
+}
+
+.customers-list {
+  margin: 0px;
+
+  display: flex;
+  align-items: center;
+}
+
+.customers-list .customers-item + .customers-item {
+  margin-left: 30px;
+}
 /*Footer*/
 /*Address*/
 
