@@ -12,6 +12,9 @@
 body {
   width: 1600px;
   height: 2924px;
+
+  align-items: center;
+  justify-content: center;
 }
 
 main {
@@ -28,6 +31,7 @@ ul {
 a {
   text-decoration-line: none;
   text-decoration: none;
+  color: var(--aditional-text-color);
 }
 
 h1,
@@ -42,6 +46,7 @@ h6 {
 p {
   margin: 0px;
 }
+
 /* top line, header */
 
 .header-top {
@@ -54,6 +59,7 @@ p {
 }
 
 .top-line-container {
+  outline: 1px solid var(--section-background-color);
   width: 1200px;
   height: 80px;
 
@@ -526,8 +532,7 @@ margin-right: 50px;
 footer {
   width: 1600px;
 
-  padding-left: 215px;
-  padding-right: 215px;
+
   padding-top: 45px;
   padding-bottom: 21px;
 
@@ -724,7 +729,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  margin-top: 0px;
+  margin-top: 94px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -750,11 +755,12 @@ footer {
 
   color: var(--title-text-color);
   background-color: var(--section-background-color);
+  text-align: center;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  /* identical to box height, or 187% */
+  /* identical to box height, or 162% */
   letter-spacing: 0.03em;
 }
 
@@ -795,6 +801,10 @@ footer {
 
   margin-left: 30px;
   margin-bottom: 30px;
+
+  box-sizing: border-box;
+  border: 1px solid #EEEEEE;
+  background-color: white;
 }
 
 .portfolio-card:nth-child(3n + 1) {
@@ -813,7 +823,15 @@ footer {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio-card-image {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
 .portfolio-title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
@@ -824,6 +842,9 @@ footer {
 }
 
 .portfolio-subtitle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: normal;
@@ -834,6 +855,8 @@ footer {
 }
 
 .portfolio-text {
+  background-color: rgba(33, 150, 243, 0.9);
+  font-family: var(--font-main);
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
