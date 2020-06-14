@@ -58,8 +58,12 @@ p {
   letter-spacing: 0.02em;
 }
 
-.top-line-container {
+/* временно, пока не узнаю, как подчеркивание ставить*/
+.portfolio {
   outline: 1px solid var(--section-background-color);
+}
+
+.top-line-container {
   width: 1200px;
   height: 80px;
 
@@ -532,6 +536,9 @@ margin-right: 50px;
 footer {
   width: 1600px;
 
+  display: block;
+  justify-content: center;
+  align-items: center;
 
   padding-top: 45px;
   padding-bottom: 21px;
@@ -707,10 +714,14 @@ footer {
   align-items: center;
   justify-content: center;
 
+  margin-left: auto;
+  margin-right: auto;
+
   padding-left: 15px;
   padding-right: 15px;
 
   font-family: var(--font-main);
+  text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
