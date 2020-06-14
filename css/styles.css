@@ -511,7 +511,8 @@ footer {
   padding-right: 15px;
 }
 
-.end-line {
+.footer-address-container {
+  display: block;
   margin-right: auto;
 }
 
@@ -556,7 +557,11 @@ footer {
   text-decoration-line: none;
 }
 
-.subscribe-text {
+.join-us {
+  display: block;
+}
+
+.join-text {
   margin-top: 0px;
   margin-bottom: 20px;
 
@@ -570,15 +575,15 @@ footer {
   text-transform: uppercase;
 }
 
-.footer-social {
+.join-social-container {
   display: flex;
 }
 
-.footer-social a {
+.join-social-container a {
   color: var(--aditional-text-color);
 }
 
-.footer-social-link {
+.join-social-link {
   width: 44px;
   height: 44px;
 
@@ -593,18 +598,32 @@ footer {
   border-radius: 200px;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.join-social-link:hover,
+.join-social-link:focus {
   background-color: var(--accent-color);
 }
 
-.footer-social-link:not(:first-child) {
+.join-social-link:not(:first-child) {
   margin-left: 10px;
 }
 
 .subscribe {
   display: flex;
   margin-left: auto;
+}
+
+.subscribe-text {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  color: var(--aditional-text-color);
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .subscribe-button {
