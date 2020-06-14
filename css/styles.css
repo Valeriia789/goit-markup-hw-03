@@ -556,7 +556,7 @@ footer {
   text-decoration-line: none;
 }
 
-.join {
+.subscribe-text {
   margin-top: 0px;
   margin-bottom: 20px;
 
@@ -604,8 +604,39 @@ footer {
 
 .subscribe {
   display: flex;
-
   margin-left: auto;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 10px 29px;
+
+  color: var(--aditional-text-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.06em;
+}
+
+.subscribe-button::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+
+  margin-left: 10px;
+  background-image: url(../images/iconsend.png);
+  background-size: contain;
 }
 
 .developers {
