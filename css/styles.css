@@ -10,9 +10,6 @@
 }
 
 body {
-  width: 1600px;
-  height: 2924px;
-
   align-items: center;
   justify-content: center;
 }
@@ -381,8 +378,10 @@ margin-right: 50px;
 /*Our team*/
 
 .team {
-  width: 1600px;
-  height: 702px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
   margin-top: 0px;
   margin-bottom: 94px;
@@ -398,7 +397,10 @@ margin-right: 50px;
 .team-container {
   width: 1200px;
 
+  display: block;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
   margin-left: auto;
   margin-right: auto;
@@ -416,11 +418,16 @@ margin-right: 50px;
 .team-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   margin: 0px;
 }
 
 .emploee-card {
+  display: block;
+  align-items: center;
+  justify-content: center;
+
   background-color: var(--aditional-text-color);
   border-radius: 0px 0px 4px 4px;
 }
@@ -534,8 +541,6 @@ margin-right: 50px;
 /*Address*/
 
 footer {
-  width: 1600px;
-
   display: block;
   justify-content: center;
   align-items: center;
